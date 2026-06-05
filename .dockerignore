@@ -1,0 +1,7 @@
+node_modules
+.git
+.vscode
+README.md
+CONTRIBUTING.md
+LICENSE
+.gitignore
