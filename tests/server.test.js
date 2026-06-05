@@ -1,25 +1,8 @@
-import { describe, it, expect, beforeAll } from "vitest";
+import { describe, it, expect } from "vitest";
 import request from "supertest";
-import express from "express";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-function createApp() {
-  const app = express();
-  app.use(express.static(path.join(__dirname, "..")));
-  return app;
-}
+import app from "../server.js";
 
 describe("Express Server", () => {
-  let app;
-
-  beforeAll(() => {
-    app = createApp();
-  });
-
   describe("GET /", () => {
     it("should return 200 status", async () => {
       const res = await request(app).get("/");
@@ -55,6 +38,14 @@ describe("Express Server", () => {
       const res = await request(app).get("/assets/js/script.js");
       expect(res.status).toBe(200);
       expect(res.headers["content-type"]).toContain("javascript");
+    });
+  });
+
+  describe("GET /health", () => {
+    it("should return 200 with status ok", async () => {
+      const res = await request(app).get("/health");
+      expect(res.status).toBe(200);
+      expect(res.body).toEqual({ status: "ok" });
     });
   });
 

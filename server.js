@@ -10,6 +10,14 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname)));
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+app.get("/health", (_req, res) => {
+  res.json({ status: "ok" });
 });
+
+export default app;
+
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+  });
+}
