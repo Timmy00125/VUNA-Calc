@@ -39,6 +39,7 @@ function calculateResult() {
   if (currentExpression.length === 0) return;
 
   let expression = currentExpression;
+  let result;
 
   try {
     if (!/^[\d+\-*/().\s]+$/.test(expression)) {
@@ -53,7 +54,7 @@ function calculateResult() {
     if (typeof result !== "number" || !isFinite(result)) {
       throw new Error("Invalid result");
     }
-  } catch (e) {
+  } catch (err) {
     currentExpression = "Error";
     updateResult();
     return;
