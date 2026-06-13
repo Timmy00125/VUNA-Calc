@@ -16,6 +16,8 @@ export default [
         localStorage: "readonly",
         confirm: "readonly",
         console: "readonly",
+        IntersectionObserver: "readonly",
+        setTimeout: "readonly",
       },
     },
     rules: {

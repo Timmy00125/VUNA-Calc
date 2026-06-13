@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUNA-Calc — Math That Speaks Your Language</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/landing.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <span class="logo-v">V</span>UNA<span class="logo-dot">.</span>Calc
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#demo">Demo</a>
+          <a href="index.html" class="nav-cta">Launch App</a>
+        </div>
+        <button class="nav-mobile-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="floating-expressions">
+        <span class="float-expr" style="--delay: 0s; --x: 8%; --y: 15%">5 + 3 = eight</span>
+        <span class="float-expr" style="--delay: 2s; --x: 75%; --y: 10%">12 &divide; 4 = three</span>
+        <span class="float-expr" style="--delay: 4s; --x: 85%; --y: 65%">7 &times; 6 = forty-two</span>
+        <span class="float-expr" style="--delay: 1s; --x: 5%; --y: 70%">100 + 50 = one hundred fifty</span>
+        <span class="float-expr" style="--delay: 3s; --x: 50%; --y: 80%">9 &minus; 4 = five</span>
+        <span class="float-expr" style="--delay: 5s; --x: 30%; --y: 20%">25 &times; 4 = one hundred</span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge reveal">A calculator that talks back</div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Math That<br />
+          <span class="hero-title-accent">Speaks</span> Your<br />
+          Language
+        </h1>
+        <p class="hero-subtitle reveal reveal-delay-2">
+          VUNA-Calc transforms cold numbers into warm, conversational English.
+          See every calculation expressed in beautiful natural language.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="index.html" class="btn-primary">
+            <span>Try It Now</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#features" class="btn-ghost">Learn More</a>
+        </div>
+
+        <div class="hero-demo-calc reveal reveal-delay-4">
+          <div class="mini-calc">
+            <div class="mini-calc-display">
+              <span class="mini-calc-expr">7 &times; 6</span>
+              <span class="mini-calc-result" id="typewriter-text">Seven multiplied by six equals forty-two</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-container">
+        <div class="section-label reveal">What Makes It Special</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Not just a calculator.<br />
+          <span class="text-accent">A conversation.</span>
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Natural Language Output</h3>
+            <p>Every result is spoken in complete English sentences. "Five plus three equals eight" &mdash; not just "8".</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            </div>
+            <h3>Core Operations</h3>
+            <p>Addition, subtraction, multiplication, and division with support for decimals, negatives, and parentheses.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Calculation History</h3>
+            <p>Every calculation is saved and timestamped. Browse, revisit, and reuse past results anytime.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3>Educational Tool</h3>
+            <p>Perfect for students learning math. Seeing numbers written out helps reinforce number-word associations.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Works beautifully on desktop, tablet, and mobile. Your calculator adapts to any screen size.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Accessibility First</h3>
+            <p>Verbal descriptions make calculations more accessible for users with visual or cognitive preferences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <div class="section-container">
+        <div class="section-label reveal">Simple By Design</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Three steps to<br />
+          <span class="text-accent">conversational math</span>
+        </h2>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Type your expression</h3>
+              <p>Enter numbers and operators using the clean button interface. Use parentheses for complex calculations.</p>
+            </div>
+            <div class="step-visual">
+              <div class="step-calc-display">7 &times; 6</div>
+            </div>
+          </div>
+
+          <div class="step-connector reveal"></div>
+
+          <div class="step reveal">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Press equals</h3>
+              <p>Hit the = button and watch as VUNA-Calc computes your result instantly.</p>
+            </div>
+            <div class="step-visual">
+              <div class="step-calc-display step-calc-equals">=</div>
+            </div>
+          </div>
+
+          <div class="step-connector reveal"></div>
+
+          <div class="step reveal">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Read it in English</h3>
+              <p>The result appears in both numbers and beautiful natural English language. It's math, but warmer.</p>
+            </div>
+            <div class="step-visual">
+              <div class="step-calc-display step-calc-words">"Seven multiplied by six equals forty-two"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo" id="demo">
+      <div class="section-container">
+        <div class="section-label reveal">See It In Action</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Numbers become<br />
+          <span class="text-accent">words</span>
+        </h2>
+
+        <div class="demo-examples">
+          <div class="demo-example reveal">
+            <div class="demo-expr">5 + 3</div>
+            <div class="demo-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+            <div class="demo-result-num">8</div>
+            <div class="demo-result-words">"Five plus three equals eight"</div>
+          </div>
+
+          <div class="demo-example reveal reveal-delay-1">
+            <div class="demo-expr">12 &divide; 4</div>
+            <div class="demo-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+            <div class="demo-result-num">3</div>
+            <div class="demo-result-words">"Twelve divided by four equals three"</div>
+          </div>
+
+          <div class="demo-example reveal reveal-delay-2">
+            <div class="demo-expr">100 + 500</div>
+            <div class="demo-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+            <div class="demo-result-num">1,500</div>
+            <div class="demo-result-words">"One hundred plus five hundred equals one thousand five hundred"</div>
+          </div>
+
+          <div class="demo-example reveal reveal-delay-3">
+            <div class="demo-expr">25 &times; 4</div>
+            <div class="demo-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+            <div class="demo-result-num">100</div>
+            <div class="demo-result-words">"Twenty-five multiplied by four equals one hundred"</div>
+          </div>
+        </div>
+
+        <div class="demo-cta reveal">
+          <a href="index.html" class="btn-primary btn-large">
+            <span>Open VUNA-Calc</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo"><span class="logo-v">V</span>UNA<span class="logo-dot">.</span>Calc</span>
+          <p>A calculator that speaks your language.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Launch App</a>
+          <a href="https://github.com/Olivia-Anigbogu/VUNA-Calc" target="_blank" rel="noopener">GitHub</a>
+          <a href="CONTRIBUTING.md">Contributing</a>
+        </div>
+        <div class="footer-bottom">
+          <p>VUNA-Calc &mdash; SEN 482 Project</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/landing.js"></script>
+  </body>
+</html>
